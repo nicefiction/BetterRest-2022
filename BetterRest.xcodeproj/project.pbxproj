@@ -13,6 +13,7 @@
 		C5B8237428018FCD001A615D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B8237328018FCD001A615D /* Preview Assets.xcassets */; };
 		C5B8237C28019094001A615D /* EnteringNumbersWithStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8237B28019094001A615D /* EnteringNumbersWithStepper.swift */; };
 		C5B8237E2801D615001A615D /* DatesAndTimesWithDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8237D2801D615001A615D /* DatesAndTimesWithDatePicker.swift */; };
+		C5B823802801E748001A615D /* WorkingWithDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8237F2801E748001A615D /* WorkingWithDates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		C5B8237328018FCD001A615D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5B8237B28019094001A615D /* EnteringNumbersWithStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringNumbersWithStepper.swift; sourceTree = "<group>"; };
 		C5B8237D2801D615001A615D /* DatesAndTimesWithDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesAndTimesWithDatePicker.swift; sourceTree = "<group>"; };
+		C5B8237F2801E748001A615D /* WorkingWithDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithDates.swift; sourceTree = "<group>"; };
+		C5B823812801E87C001A615D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 			children = (
 				C5B8237B28019094001A615D /* EnteringNumbersWithStepper.swift */,
 				C5B8237D2801D615001A615D /* DatesAndTimesWithDatePicker.swift */,
+				C5B8237F2801E748001A615D /* WorkingWithDates.swift */,
+				C5B823812801E87C001A615D /* MyPlayground.playground */,
 			);
 			path = "Day 26";
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B823802801E748001A615D /* WorkingWithDates.swift in Sources */,
 				C5B8237C28019094001A615D /* EnteringNumbersWithStepper.swift in Sources */,
 				C5B8236F28018FCB001A615D /* ContentView.swift in Sources */,
 				C5B8237E2801D615001A615D /* DatesAndTimesWithDatePicker.swift in Sources */,
