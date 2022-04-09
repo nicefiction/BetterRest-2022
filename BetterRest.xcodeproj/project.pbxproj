@@ -12,6 +12,7 @@
 		C5B8237128018FCD001A615D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B8237028018FCD001A615D /* Assets.xcassets */; };
 		C5B8237428018FCD001A615D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B8237328018FCD001A615D /* Preview Assets.xcassets */; };
 		C5B8237C28019094001A615D /* EnteringNumbersWithStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8237B28019094001A615D /* EnteringNumbersWithStepper.swift */; };
+		C5B8237E2801D615001A615D /* DatesAndTimesWithDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8237D2801D615001A615D /* DatesAndTimesWithDatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C5B8237028018FCD001A615D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B8237328018FCD001A615D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5B8237B28019094001A615D /* EnteringNumbersWithStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringNumbersWithStepper.swift; sourceTree = "<group>"; };
+		C5B8237D2801D615001A615D /* DatesAndTimesWithDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesAndTimesWithDatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				C5B8237B28019094001A615D /* EnteringNumbersWithStepper.swift */,
+				C5B8237D2801D615001A615D /* DatesAndTimesWithDatePicker.swift */,
 			);
 			path = "Day 26";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				C5B8237C28019094001A615D /* EnteringNumbersWithStepper.swift in Sources */,
 				C5B8236F28018FCB001A615D /* ContentView.swift in Sources */,
+				C5B8237E2801D615001A615D /* DatesAndTimesWithDatePicker.swift in Sources */,
 				C5B8236D28018FCB001A615D /* BetterRestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

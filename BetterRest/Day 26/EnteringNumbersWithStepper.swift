@@ -8,7 +8,7 @@ import SwiftUI
 struct EnteringNumbersWithStepper: View {
     
     // MARK: - PROPERTY WRAPPERS
-    @State private var sleepAmount: Double = 0.00
+    @State private var sleepAmount: Double = 4.00
     
     
     
@@ -18,10 +18,14 @@ struct EnteringNumbersWithStepper: View {
     var body: some View {
         
         Form {
-            Stepper("\(sleepAmount.formatted()) hours",
-                    value: $sleepAmount,
-                    in: 4...12,
-                    step: 0.25)
+            Section {
+                Stepper("\(sleepAmount.formatted()) hours",
+                        value: $sleepAmount,
+                        in: 4...12,
+                        step: 0.25)
+            } header: {
+                Text("Amount of sleep")
+            }
         }
     }
     
