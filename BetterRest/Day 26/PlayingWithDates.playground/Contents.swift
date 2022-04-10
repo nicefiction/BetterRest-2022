@@ -37,3 +37,30 @@ let minute = formattedComponents.minute ?? 0
 
 
 
+func createDefaultWakeUpTime()
+-> Void {
+    
+    var components = DateComponents()
+    components.hour = 8
+    components.minute = 0
+    let date = Calendar.current.date(from: components) ?? Date.now
+    
+    print("Create Default wake up time: \(date)")
+}
+
+
+
+func readTheHourAndMinute()
+-> Void {
+    
+    let components = DateComponents()
+    let hour = components.hour ?? 0
+    let minute = components.minute ?? 0
+    
+    print("Hour: \(hour)\nMinute: \(minute)")
+}
+
+
+createDefaultWakeUpTime()
+readTheHourAndMinute()
+

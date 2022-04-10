@@ -25,7 +25,7 @@
 		C5B8237B28019094001A615D /* EnteringNumbersWithStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringNumbersWithStepper.swift; sourceTree = "<group>"; };
 		C5B8237D2801D615001A615D /* DatesAndTimesWithDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesAndTimesWithDatePicker.swift; sourceTree = "<group>"; };
 		C5B8237F2801E748001A615D /* WorkingWithDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithDates.swift; sourceTree = "<group>"; };
-		C5B823812801E87C001A615D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5B823812801E87C001A615D /* PlayingWithDates.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlayingWithDates.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 				C5B8237B28019094001A615D /* EnteringNumbersWithStepper.swift */,
 				C5B8237D2801D615001A615D /* DatesAndTimesWithDatePicker.swift */,
 				C5B8237F2801E748001A615D /* WorkingWithDates.swift */,
-				C5B823812801E87C001A615D /* MyPlayground.playground */,
+				C5B823812801E87C001A615D /* PlayingWithDates.playground */,
 			);
 			path = "Day 26";
 			sourceTree = "<group>";

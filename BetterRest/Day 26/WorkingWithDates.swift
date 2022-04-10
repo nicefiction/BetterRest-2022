@@ -10,6 +10,10 @@ import SwiftUI
 struct WorkingWithDates: View {
     
     // MARK: - PROPERTY WRAPPERS
+    @State private var wakeUpTime: Date = Date.now
+    
+    
+    
     // MARK: - PROPERTIES
     // MARK: - INITIALIZERS
     // MARK: - COMPUTED PROPERTIES
@@ -26,6 +30,10 @@ struct WorkingWithDates: View {
             /// passing in configuration options for
             /// how we want both the `date` and the `time` to be formatted, like this:
             Text(Date.now.formatted(date: .long, time: .shortened))
+    
+            Text("\(createDefaultWakeUpTime())")
+            Text(createDefaultWakeUpTime(),
+                 format: .dateTime.hour().minute())
         }
         .font(.title)
     }
@@ -36,17 +44,24 @@ struct WorkingWithDates: View {
     // MARK: HELPER METHODS
     /// CHALLENGE 1:
     func createDefaultWakeUpTime()
-    -> Void {
-        
+    -> Date {
+        /// `DateComponents` lets us read or write specific parts of a date
+        /// rather than the whole thing.
         var components = DateComponents()
         components.hour = 8
         components.minute = 0
         let date = Calendar.current.date(from: components) ?? Date.now
         
         print(date)
+        
+        return date
     }
     
     /// CHALLENGE 2:
+    /// The second challenge is
+    /// how we could read the hour they want to wake up.
+    /// Remember, `DatePicker` is bound to a `Date` giving us lots of information,
+    /// so we need to find a way to pull out just the hour and minute components.
     func readTheHourAndMinute()
     -> Void {
         
