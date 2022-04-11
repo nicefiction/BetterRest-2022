@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C504A390280311D000A338F5 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C504A38F280311D000A338F5 /* SleepCalculator.mlmodel */; };
+		C504A39228042FD400A338F5 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504A39128042FD400A338F5 /* ChallengeView.swift */; };
+		C504A3952804351700A338F5 /* DatePickerRecap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504A3942804351700A338F5 /* DatePickerRecap.swift */; };
+		C504A39728045F2400A338F5 /* DateComponentsRecap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504A39628045F2400A338F5 /* DateComponentsRecap.swift */; };
 		C5B8236D28018FCB001A615D /* BetterRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8236C28018FCB001A615D /* BetterRestApp.swift */; };
 		C5B8236F28018FCB001A615D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8236E28018FCB001A615D /* ContentView.swift */; };
 		C5B8237128018FCD001A615D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B8237028018FCD001A615D /* Assets.xcassets */; };
@@ -19,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		C504A38F280311D000A338F5 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = SOURCE_ROOT; };
+		C504A39128042FD400A338F5 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		C504A3942804351700A338F5 /* DatePickerRecap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerRecap.swift; sourceTree = "<group>"; };
+		C504A39628045F2400A338F5 /* DateComponentsRecap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentsRecap.swift; sourceTree = "<group>"; };
+		C504A398280460E200A338F5 /* DateComponents.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DateComponents.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5B8236928018FCA001A615D /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B8236C28018FCB001A615D /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
 		C5B8236E28018FCB001A615D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C504A3932804308B00A338F5 /* Day 28 */ = {
+			isa = PBXGroup;
+			children = (
+				C504A39128042FD400A338F5 /* ChallengeView.swift */,
+				C504A3942804351700A338F5 /* DatePickerRecap.swift */,
+				C504A39628045F2400A338F5 /* DateComponentsRecap.swift */,
+				C504A398280460E200A338F5 /* DateComponents.playground */,
+			);
+			path = "Day 28";
+			sourceTree = "<group>";
+		};
 		C5B8236028018FCA001A615D = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +78,7 @@
 		C5B8236B28018FCA001A615D /* BetterRest */ = {
 			isa = PBXGroup;
 			children = (
+				C504A3932804308B00A338F5 /* Day 28 */,
 				C5B8237A28019074001A615D /* Day 26 */,
 				C5B8236C28018FCB001A615D /* BetterRestApp.swift */,
 				C5B8236E28018FCB001A615D /* ContentView.swift */,
@@ -162,9 +181,12 @@
 				C5B823802801E748001A615D /* WorkingWithDates.swift in Sources */,
 				C5B8237C28019094001A615D /* EnteringNumbersWithStepper.swift in Sources */,
 				C5B8236F28018FCB001A615D /* ContentView.swift in Sources */,
+				C504A39228042FD400A338F5 /* ChallengeView.swift in Sources */,
+				C504A39728045F2400A338F5 /* DateComponentsRecap.swift in Sources */,
 				C504A390280311D000A338F5 /* SleepCalculator.mlmodel in Sources */,
 				C5B8237E2801D615001A615D /* DatesAndTimesWithDatePicker.swift in Sources */,
 				C5B8236D28018FCB001A615D /* BetterRestApp.swift in Sources */,
+				C504A3952804351700A338F5 /* DatePickerRecap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
