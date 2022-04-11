@@ -10,7 +10,7 @@ struct ContentView: View {
     
     // MARK: - PROPERTY WRAPPERS
     @State private var sleepAmount: Double = 9.00
-    @State private var wakeUpTime: Date = Date.now
+    @State private var wakeUpTime: Date = defaultWakeUpTime
     @State private var amountOfCoffeeCups: Int = 1
     @State private var alertTitle: String = ""
     @State private var alertMessage: String = ""
@@ -21,29 +21,47 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     // MARK: - INITIALIZERS
     // MARK: - COMPUTED PROPERTIES
+    static var defaultWakeUpTime: Date {
+        
+//         let wakeUpTimeComponents = Calendar.current.dateComponents([.minute, .hour],
+//                                                                    from: wakeUpTime)
+//         let hourToSeconds = (wakeUpTimeComponents.hour ?? 0) * 60 * 60
+//         let minuteToSeconds = (wakeUpTimeComponents.minute ?? 0) * 60
+        
+        var dateComponents = DateComponents.init()
+        dateComponents.hour = 8
+        dateComponents.minute = 0
+        
+        return Calendar.current.date(from: dateComponents) ?? Date.now
+    }
+    
+    
     var body: some View {
         
         NavigationView {
-            VStack {
+            Form {
                 DatePicker("Wake me up at",
                            selection: $wakeUpTime,
                            displayedComponents: .hourAndMinute)
-                Text("Amount of sleep:")
-                    .font(.headline)
-                Stepper("\(sleepAmount.formatted()) hours of sleep",
-                        value: $sleepAmount,
-                        in: 4...12,
-                        step: 0.25)
-                Text("Amount of coffee cups:")
-                    .font(.headline)
-                Stepper("\(amountOfCoffeeCups) \(amountOfCoffeeCups == 1 ? "cup" : "cups")",
-                        value: $amountOfCoffeeCups,
-                        in: 1...10)
+                VStack {
+                    Text("Amount of sleep:")
+                        .font(.headline)
+                    Stepper("\(sleepAmount.formatted()) hours of sleep",
+                            value: $sleepAmount,
+                            in: 4...12,
+                            step: 0.25)
+                }
+                VStack {
+                    Text("Amount of coffee cups:")
+                        .font(.headline)
+                    Stepper("\(amountOfCoffeeCups) \(amountOfCoffeeCups == 1 ? "cup" : "cups")",
+                            value: $amountOfCoffeeCups,
+                            in: 1...10)
+                }
             }
-            .padding()
             .navigationTitle("Better Rest")
             .toolbar {
-                Button("Calculate Bedtime",
+                Button("Show Bedtime",
                        action: calculateBedtime)
             }
             .alert(alertTitle,
