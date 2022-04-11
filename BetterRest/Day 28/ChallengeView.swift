@@ -10,7 +10,7 @@ struct ChallengeView: View {
     
     // MARK: - PROPERTY WRAPPERS
     @State private var wakeUpTime: Date = defaultWakeUpTime
-    @State private var amountOfSleep: Double = 4.00
+    @State private var amountOfSleep: Double = 8.00
     @State private var amountOfCoffeeCups: Int = 1
     @State private var alertTitle: String = ""
     @State private var alertMessage: String = ""
@@ -34,38 +34,48 @@ struct ChallengeView: View {
     var body: some View {
         
         NavigationView {
-            Form {
-                DatePicker("I'd like to wake up at...",
-                           selection: $wakeUpTime,
-                           displayedComponents: .hourAndMinute)
-                Section {
-                    Stepper("\(amountOfSleep.formatted()) hours",
-                            value: $amountOfSleep,
-                            in: 4...12,
-                            step: 0.25)
-                } header: {
-                    Text("Amount of sleep")
-                }
-                Section(header: Text("Total cups of coffee")) {
-                    Picker("Total cups of coffee...",
-                           selection: $amountOfCoffeeCups) {
-                        ForEach(1...20,
-                                id: \.self) {
-                            Text("\($0)")
+            VStack {
+                Form {
+                    DatePicker("I'd like to wake up at...",
+                               selection: $wakeUpTime,
+                               displayedComponents: .hourAndMinute)
+                    Section {
+                        Stepper("\(amountOfSleep.formatted()) hours",
+                                value: $amountOfSleep,
+                                in: 4...12,
+                                step: 0.25)
+                    } header: {
+                        Text("Amount of sleep")
+                    }
+                    Section(header: Text("Total cups of coffee")) {
+                        Picker("Total cups of coffee...",
+                               selection: $amountOfCoffeeCups) {
+                            ForEach(1...20,
+                                    id: \.self) {
+                                Text("\($0)")
+                            }
                         }
                     }
                 }
-            }
-            .navigationTitle("Better Rest")
-            .toolbar {
-                Button("My Bedtime",
-                       action: calculateBedTime)
-            }
-            .alert(alertTitle,
-                   isPresented: $isShowingAlert) {
-                Button("OK") {}
-            } message: {
-                Text(alertMessage)
+                .navigationTitle("Better Rest")
+                .alert(alertTitle,
+                       isPresented: $isShowingAlert) {
+                    Button("OK") {}
+                } message: {
+                    Text(alertMessage)
+                }
+                Button(action: calculateBedTime) {
+                    HStack {
+                        Spacer()
+                        Text("Calculate Bedtime")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .padding()
+                        Spacer()
+                    }
+                }
+                .buttonStyle(.borderedProminent)
+                .padding()
             }
         }
     }
