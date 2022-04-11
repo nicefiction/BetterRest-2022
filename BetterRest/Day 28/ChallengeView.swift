@@ -47,8 +47,13 @@ struct ChallengeView: View {
                     Text("Amount of sleep")
                 }
                 Section(header: Text("Total cups of coffee")) {
-                    Stepper("\(amountOfCoffeeCups) \(amountOfCoffeeCups == 1 ? "cup" : "cups")",
-                            value: $amountOfCoffeeCups)
+                    Picker("Total cups of coffee...",
+                           selection: $amountOfCoffeeCups) {
+                        ForEach(1...20,
+                                id: \.self) {
+                            Text("\($0)")
+                        }
+                    }
                 }
             }
             .navigationTitle("Better Rest")
